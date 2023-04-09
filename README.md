@@ -1,4 +1,6 @@
 # Problema de programação linear inteira (PLI)
+![WhatsApp Image 2023-04-09 at 17 25 20](https://user-images.githubusercontent.com/107778190/230794910-764060fe-5cea-41b0-8c92-75e09eb9b08b.jpeg)
+
 
 ## Parâmetros
 - $M$: número de fábricas e clientes
