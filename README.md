@@ -17,7 +17,7 @@
 ## Função objetivo
 
 $$
-\text{minimize } custoTotal = \sum_{i \in FABRICAS}\sum_{j \in CLIENTES} custoTransporte_{i,j} x_{i,j} + \sum_{i \in FABRICAS} custoFixo_i y_i
+\text{minimize } custoTotal = \sum_{i \in FABRICAS}^M\sum_{j \in CLIENTES}^M custoTransporte_{i,j} x_{i,j} + \sum_{i \in FABRICAS}^M custoFixo_i y_i
 $$
 
 ## Restrições
@@ -25,13 +25,13 @@ $$
 ### Demanda dos clientes
 
 $$
-\text{sujeito a } \sum_{i \in FABRICAS} x_{i,j} = demanda_j, \forall j \in CLIENTES
+\text{sujeito a } \sum_{i \in FABRICAS}^M x_{i,j} = demanda_j, \forall j \in CLIENTES
 $$
 
 ### Limite de produção das fábricas
 
 $$
-\text{sujeito a } \sum_{j \in CLIENTES} x_{i,j} \leq limiteProducao_i y_i, \forall i \in FABRICAS
+\text{sujeito a } \sum_{j \in CLIENTES}^M x_{i,j} \leq limiteProducao_i y_i, \forall i \in FABRICAS
 $$
 
 ---
