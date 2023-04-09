@@ -147,17 +147,17 @@ end; # Fim da definição dos dados
 End of output
 
 
-### Tempo de execução:
+#### Tempo de execução:
 ![WhatsApp Image 2023-04-09 at 16 20 21](https://user-images.githubusercontent.com/107778190/230792504-63444dbc-967e-431d-b6b5-57cc2da4f55d.jpeg)
 ---
-##### 1000 fábricas e 1000 clientes
+###### 1000 fábricas e 1000 clientes
 Alteração em uma linha de código  
 ```
 param M := 1000; # Define o tamanho da matriz como 1000
 ```
-### Tempo de execução:
+#### Tempo de execução:
 ![modelo02 -tempoexecução](https://user-images.githubusercontent.com/107778190/230792784-55463377-73ac-4395-8892-c3e9148946a3.png)
 
-### Custo total:
+#### Custo total:
 ![custototal -molode02](https://user-images.githubusercontent.com/107778190/230792810-eb68b2b6-9150-4c2a-93a5-581e11269d12.png)
 
