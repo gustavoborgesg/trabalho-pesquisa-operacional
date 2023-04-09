@@ -1,7 +1,6 @@
-# Problema de otimização da produção
+# Problema de programação linear inteira (PLI)
 
 ## Parâmetros
-
 - $M$: número de fábricas e clientes
 - `FABRICAS`: conjunto de fábricas
 - `CLIENTES`: conjunto de clientes
@@ -148,4 +147,11 @@ end; # Fim da definição dos dados
 End of output
 
 
-
+### Tempo de execução:
+![WhatsApp Image 2023-04-09 at 16 20 21](https://user-images.githubusercontent.com/107778190/230792504-63444dbc-967e-431d-b6b5-57cc2da4f55d.jpeg)
+---
+##### 1000 fábricas e 1000 clientes
+Alteração em uma linha de código  
+```
+param M := 1000; # Define o tamanho da matriz como 1000
+```
