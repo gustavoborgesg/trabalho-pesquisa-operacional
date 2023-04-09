@@ -155,3 +155,9 @@ Alteração em uma linha de código
 ```
 param M := 1000; # Define o tamanho da matriz como 1000
 ```
+### Tempo de execução:
+![modelo02 -tempoexecução](https://user-images.githubusercontent.com/107778190/230792784-55463377-73ac-4395-8892-c3e9148946a3.png)
+
+### Custo total:
+
+
