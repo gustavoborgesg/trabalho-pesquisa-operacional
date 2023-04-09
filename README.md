@@ -1,4 +1,6 @@
 # Problema de programação linear inteira (PLI)
+## Enunciado :speech_balloon:
+![Enunciado](https://user-images.githubusercontent.com/107778190/230794910-764060fe-5cea-41b0-8c92-75e09eb9b08b.jpeg)
 
 ## Parâmetros :abacus: 
 - $M$: número de fábricas e clientes
