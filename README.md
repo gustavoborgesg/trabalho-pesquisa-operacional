@@ -26,11 +26,11 @@ $$
 ### Demanda dos clientes
 
 $$
-\text{subject to } \sum_{i \in FABRICAS} x_{i,j} = demanda_j, \forall j \in CLIENTES
+\text{sujeito a } \sum_{i \in FABRICAS} x_{i,j} = demanda_j, \forall j \in CLIENTES
 $$
 
 ### Limite de produção das fábricas
 
 $$
-\text{subject to } \sum_{j \in CLIENTES} x_{i,j} \leq limiteProducao_i y_i, \forall i \in FABRICAS
+\text{sujeito a } \sum_{j \in CLIENTES} x_{i,j} \leq limiteProducao_i y_i, \forall i \in FABRICAS
 $$
