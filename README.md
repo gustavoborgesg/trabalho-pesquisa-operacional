@@ -150,8 +150,8 @@ End of output
 #### Tempo de execução:
 ![WhatsApp Image 2023-04-09 at 16 20 21](https://user-images.githubusercontent.com/107778190/230792504-63444dbc-967e-431d-b6b5-57cc2da4f55d.jpeg)
 ---
-###### 1000 fábricas e 1000 clientes
-Alteração em uma linha de código  
+###### 1000 fábricas e 1000 clientes / Alteração em uma linha de código 
+ 
 ```
 param M := 1000; # Define o tamanho da matriz como 1000
 ```
@@ -161,13 +161,15 @@ param M := 1000; # Define o tamanho da matriz como 1000
 #### Custo total:
 ![custototal -molode02](https://user-images.githubusercontent.com/107778190/230792810-eb68b2b6-9150-4c2a-93a5-581e11269d12.png)
 
+---
 
 ## Caso em que não foi possível encontrar uma solução ótima
-Adição de uma nova restrição
-# Restrição adicional
-#subj to limiteFabricasAbertas: sum{i in FABRICAS} y[i] <= 2; # Define a restrição adicional de que o número de fábricas abertas não pode exceder 2
+### Restrição adicional
+```
+subj to limiteFabricasAbertas: sum{i in FABRICAS} y[i] <= 2; # Define a restrição adicional de que o número de fábricas abertas não pode exceder 2
+```
 
-
+![semsoluçãoótima](https://user-images.githubusercontent.com/107778190/230793000-21a53e3c-214c-4011-b883-eb0481c1c8d0.png)
 
 
 
