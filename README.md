@@ -1,36 +1,31 @@
-# Trabalho de Pesquisa Operacional (Programação Linear Inteira)
+# Problema de otimização da produção
 
-Este projeto foi desenvolvido durante as aulas de Pesquisa Operacional, do curso de Ciências da Computação, com o intuito de aplicar os conhecimentos adquiridos na prática.
+## Parâmetros
 
+- $M$: número de fábricas
+- $FABRICAS$: conjunto de fábricas
+- $CLIENTES$: conjunto de clientes
+- $demanda_j$: demanda do cliente $j$
+- $limiteProducao_i$: limite de produção da fábrica $i$
+- $custoFixo_i$: custo fixo da fábrica $i$
+- $custoTransporte_{i,j}$: custo de transporte da fábrica $i$ para o cliente $j$
 
-**Variáveis de decisão:**
+## Variáveis de decisão
 
-- x_11, x_12, x_13: quantidade enviada da fábrica 1 aos clientes 1, 2 e 3, respectivamente
-- x_21, x_22, x_23: quantidade enviada da fábrica 2 aos clientes 1, 2 e 3, respectivamente
-- x_31, x_32, x_33: quantidade enviada da fábrica 3 aos clientes 1, 2 e 3, respectivamente
-- y_1, y_2, y_3: fábrica i está aberta (1) ou fechada (0)
+- $x_{i,j}$: quantidade produzida na fábrica $i$ para o cliente $j$
+- $y_i$: indica se a fábrica $i$ é utilizada ou não
 
-**Restrições:**
+## Função objetivo
 
-1. Restrições de demanda dos clientes:
+$$\text{minimize } custoTotal = \sum_{i \in FABRICAS}\sum_{j \in CLIENTES} custoTransporte_{i,j} x_{i,j} + \sum_{i \in FABRICAS} custoFixo_i y_i$$
 
-  - x_11 + x_21 + x_31 = 1200   
-  - x_12 + x_22 + x_32 = 1700
-  - x_13 + x_23 + x_33 = 1600
+## Restrições
 
-2. Restrições de capacidade das fábricas:
+### Demanda dos clientes
 
-  - x_11 + x_12 + x_13 <= 1800 * y_1
-  - x_21 + x_22 + x_23 <= 1400 * y_2
-  - x_31 + x_32 + x_33 <= 1300 * y_3
+$$\text{subject to } \sum_{i \in FABRICAS} x_{i,j} = demanda_j, \forall j \in CLIENTES$$
 
-3. Restrições de integridade:
+### Limite de produção das fábricas
 
-  - xij ∈ Z ≥ 0 (para todos os i e j) 
-  - yi ∈ {0, 1} (para todos os i)
+$$\text{subject to } \sum_{j \in CLIENTES} x_{i,j} \leq limiteProducao_i y_i, \forall i \in FABRICAS$$
 
-**Função objetivo:**
-
-Minimizar o custo total, incluindo os custos fixos e de transporte:
-
-Custo_total = 12000 * y_1 + 11000 * y_2 + 12000 * y_3 + 10 * x_11 + 17 * x_12 + 15 * x_13 + 15 * x_21 + 14 * x_22 + 10 * x_23 + 12 * x_31 + 20 * x_32 + 11 * x_33
