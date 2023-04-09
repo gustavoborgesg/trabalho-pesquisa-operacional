@@ -95,3 +95,55 @@ param custoTransporte : 1      2      3 := # Define o parâmetro de custo de tra
 
 end; # Fim da definição dos dados
 ```
+
+
+## Arquivo .out
+
+- Model: `modelo`
+- Rows: `7`
+- Columns: `12` (`12` integer, `3` binary)
+- Non-zeros: `33`
+- Status: `INTEGER OPTIMAL`
+- Objective: `custoTotal = 87800` (MINimum)
+
+### Rows
+
+| No. | Row name | Activity | Lower bound | Upper bound |
+| --- | --- | --- | --- | --- |
+| `1` | `custoTotal` | `87800` | | |
+| `2` | `demandaClientes[1]` | `1200` | `1200` | `=` |
+| `3` | `demandaClientes[2]` | `1700` | `1700` | `=` |
+| `4` | `demandaClientes[3]` | `1600` | `1600` | `=` |
+| `5` | `limiteProducaoFabricas[1]` | `0` | | `-0` |
+| `6` | `limiteProducaoFabricas[2]` | `0` | | `-0` |
+| `7` | `limiteProducaoFabricas[3]` | `0` | | `-0` |
+
+### Columns
+
+| No. | Column name | Activity | Lower bound | Upper bound |
+| --- | --- | --- | --- | --- |
+| `1` | `x[1,1]` | `*` | `1200` | `0` |
+| `2` | `x[1,2]` | `*` | `0` | `0` |
+| `3` | `x[1,3]` | `*` | `600` | `0` |
+| `4` | `x[2,1]` | `*` | `0` | `0` |
+| `5` | `x[2,2]` | `*` | `1400` | `0` |
+| `6` | `x[2,3]` | `*` | `0` | `0` |
+| `7` | `x[3,1]` | `*` | `0` | `0` |
+| `8` | `x[3,2]` | `*` | `300` | `0` |
+| `9` | `x[3,3]` | `*` | `1000` | `0` |
+| `10` | `y[1]` | `*` | `1` | `0` | `1` |
+| `11` | `y[2]` | `*` | `1` | `0` | `1` |
+| `12` | `y[3]` | `*` | `1` | `0` | `1` |
+
+### Integer feasibility conditions:
+
+- KKT.PE: max.abs.err = `0.00e+00` on row `0`
+- max.rel.err = `0.00e+00` on row `0`
+- High quality
+
+- KKT.PB: max.abs.err = `0.00e+00` on row `0`
+- max.rel.err = `0.00e+00` on row `0`
+- High quality
+
+End of output
+
