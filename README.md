@@ -161,3 +161,13 @@ param M := 1000; # Define o tamanho da matriz como 1000
 #### Custo total:
 ![custototal -molode02](https://user-images.githubusercontent.com/107778190/230792810-eb68b2b6-9150-4c2a-93a5-581e11269d12.png)
 
+
+## Caso em que não foi possível encontrar uma solução ótima
+Adição de uma nova restrição
+# Restrição adicional
+#subj to limiteFabricasAbertas: sum{i in FABRICAS} y[i] <= 2; # Define a restrição adicional de que o número de fábricas abertas não pode exceder 2
+
+
+
+
+
