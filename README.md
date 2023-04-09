@@ -159,5 +159,5 @@ param M := 1000; # Define o tamanho da matriz como 1000
 ![modelo02 -tempoexecução](https://user-images.githubusercontent.com/107778190/230792784-55463377-73ac-4395-8892-c3e9148946a3.png)
 
 ### Custo total:
-
+![custototal -molode02](https://user-images.githubusercontent.com/107778190/230792810-eb68b2b6-9150-4c2a-93a5-581e11269d12.png)
 
