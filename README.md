@@ -57,7 +57,7 @@ param M := 1000; # Define o tamanho da matriz como 1000
 ```
 subj to limiteFabricasAbertas: sum{i in FABRICAS} y[i] <= 2; # Define a restrição adicional de que o número de fábricas abertas não pode exceder 2
 ```
-
+#### Tempo de execução:
 ![WhatsApp Image 2023-04-09 at 17 14 04](https://user-images.githubusercontent.com/107778190/230794495-adca63bf-6eea-4fe8-8fb9-2c6cc7fb4e92.jpeg)
 
 
