@@ -69,5 +69,6 @@ subj to limiteFabricasAbertas: sum{i in FABRICAS} y[i] <= 2; # Define a restriç
 ![WhatsApp Image 2023-04-09 at 17 14 04](https://user-images.githubusercontent.com/107778190/230794495-adca63bf-6eea-4fe8-8fb9-2c6cc7fb4e92.jpeg)
 
 ---
+## Gráfico de comparação entre execuções :bar_chart:
 ![Relação Entrada - Memória](https://user-images.githubusercontent.com/107778190/231308186-ab87add2-638e-4f4a-931a-e0b9318a0c61.png)
 ![Relação Entrada - Tempo](https://user-images.githubusercontent.com/107778190/231308231-c1605ac5-cd11-400c-99d9-0069c42b7d46.png)
