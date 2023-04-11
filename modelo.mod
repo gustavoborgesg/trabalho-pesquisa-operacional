@@ -1,28 +1,28 @@
-param M := 3; # Define o tamanho da matriz como 3
-set FABRICAS := 1..M; # Define o conjunto de f·bricas de 1 a 3
-set CLIENTES := 1..M; # Define o conjunto de clientes de 1 a 3
+param M := 2000; # Define o tamanho da matriz como 2000
+set FABRICAS := 1..M; # Define o conjunto de f√°bricas de 1 a 2000
+set CLIENTES := 1..M; # Define o conjunto de clientes de 1 a 2000
 
-param demanda{CLIENTES}; # Define o par‚metro de demanda dos clientes
-param limiteProducao{FABRICAS}; # Define o par‚metro de limite de produÁ„o das f·bricas
-param custoFixo{FABRICAS}; # Define o par‚metro de custo fixo das f·bricas
-param custoTransporte{FABRICAS,CLIENTES}; # Define o par‚metro de custo de transporte das f·bricas para os clientes
+param demanda{CLIENTES}; # Define o par√¢metro de demanda dos clientes
+param limiteProducao{FABRICAS}; # Define o par√¢metro de limite de produ√ß√£o das f√°bricas
+param custoFixo{FABRICAS}; # Define o par√¢metro de custo fixo das f√°bricas
+param custoTransporte{FABRICAS,CLIENTES}; # Define o par√¢metro de custo de transporte das f√°bricas para os clientes
 
-# Vari·veis de decis„o
-var x{FABRICAS,CLIENTES} integer >= 0; # Define a vari·vel de produÁ„o que È um inteiro maior ou igual a 0
-var y{FABRICAS} binary; # Define a vari·vel bin·ria que indica se a f·brica est· aberta ou n„o
+# Vari√°veis de decis√£o
+var x{FABRICAS,CLIENTES} integer >= 0; # Define a vari√°vel de produ√ß√£o que √© um inteiro maior ou igual a 0
+var y{FABRICAS} binary; # Define a vari√°vel bin√°ria que indica se a f√°brica est√° aberta ou n√£o
 
-# FunÁ„o objetivo: minimizar o custo total
-minimize custoTotal: sum{i in FABRICAS, j in CLIENTES} custoTransporte[i,j] * x[i,j] + sum{i in FABRICAS} custoFixo[i] * y[i]; # Define a funÁ„o objetivo que minimiza o custo total
+# Fun√ß√£o objetivo: minimizar o custo total
+minimize custoTotal: sum{i in FABRICAS, j in CLIENTES} custoTransporte[i,j] * x[i,j] + sum{i in FABRICAS} custoFixo[i] * y[i]; # Define a fun√ß√£o objetivo que minimiza o custo total
 
-# RestriÁıes
+# Restri√ß√µes
 
 # Demanda dos clientes
-subj to demandaClientes{j in CLIENTES}: sum{i in FABRICAS} x[i,j] = demanda[j]; # Define a restriÁ„o de que a soma da produÁ„o das f·bricas para cada cliente deve ser igual ‡ sua demanda
+subj to demandaClientes{j in CLIENTES}: sum{i in FABRICAS} x[i,j] = demanda[j]; # Define a restri√ß√£o de que a soma da produ√ß√£o das f√°bricas para cada cliente deve ser igual √† sua demanda
 
-# Limite de produÁ„o das f·bricas
-subj to limiteProducaoFabricas{i in FABRICAS}: sum{j in CLIENTES} x[i,j] <= limiteProducao[i] * y[i]; # Define a restriÁ„o de que a soma da produÁ„o de cada f·brica n„o pode exceder seu limite de produÁ„o se a f·brica estiver aberta
+# Limite de produ√ß√£o das f√°bricas
+subj to limiteProducaoFabricas{i in FABRICAS}: sum{j in CLIENTES} x[i,j] <= limiteProducao[i] * y[i]; # Define a restri√ß√£o de que a soma da produ√ß√£o de cada f√°brica n√£o pode exceder seu limite de produ√ß√£o se a f√°brica estiver aberta
 
 # Dados do problema
 
 
-end; # Fim da definiÁ„o do modelo de programaÁ„o linear inteira  (PLI) em
+end; # Fim da defini√ß√£o do modelo de programa√ß√£o linear inteira  (PLI) em
