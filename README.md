@@ -47,8 +47,7 @@ $$
 param M := 1000; # Define o tamanho da matriz como 1000
 ```
 #### Tempo de execução :hourglass::heavy_plus_sign: e memória :floppy_disk::heavy_plus_sign::
-![modelo02 -tempoexecução](https://user-images.githubusercontent.com/107778190/230792784-55463377-73ac-4395-8892-c3e9148946a3.png)
-
+![aprint1000](https://user-images.githubusercontent.com/107778190/231298204-9b772811-f79f-4127-8849-b9c6c3ed04de.png)
 #### Solução ótima :trophy::
 ![custototal -molode02](https://user-images.githubusercontent.com/107778190/230792810-eb68b2b6-9150-4c2a-93a5-581e11269d12.png)
 ---
