@@ -38,7 +38,7 @@ $$
 
 ---
 
-#### Tempo de execução :hourglass_flowing_sand::
+#### Tempo de execução :hourglass_flowing_sand: e memória :floppy_disk::
 ![WhatsApp Image 2023-04-09 at 16 20 21](https://user-images.githubusercontent.com/107778190/230792504-63444dbc-967e-431d-b6b5-57cc2da4f55d.jpeg)
 ---
 ###### 1000 fábricas e 1000 clientes / Alteração em uma linha de código 
@@ -46,7 +46,7 @@ $$
 ```
 param M := 1000; # Define o tamanho da matriz como 1000
 ```
-#### Tempo de execução :hourglass: :hourglass: :hourglass::
+#### Tempo de execução :hourglass::heavy_plus_sign: e memória :floppy_disk::heavy_plus_sign::
 ![modelo02 -tempoexecução](https://user-images.githubusercontent.com/107778190/230792784-55463377-73ac-4395-8892-c3e9148946a3.png)
 
 #### Solução ótima :trophy::
@@ -58,7 +58,7 @@ param M := 1000; # Define o tamanho da matriz como 1000
 param M := 2000; # Define o tamanho da matriz como 2000
 ```
 #### Erro de memória :skull::
-![image](https://user-images.githubusercontent.com/97256329/231294122-463041bc-bd81-4f27-81e6-fe3bc7ef6956.png)
+![print2000](https://user-images.githubusercontent.com/107778190/231297274-7c833588-24c7-4a1f-9b13-6ff0a27e3352.png)
 ---
 
 ## Caso em que não foi possível encontrar uma solução ótima :heavy_multiplication_x:
